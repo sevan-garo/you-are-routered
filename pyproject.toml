@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=75"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "routedrag"
+version = "0.1.0"
+description = "MoE-routed advanced RAG system"
+requires-python = ">=3.12,<3.13"
+dependencies = [
+    "fastapi",
+    "uvicorn[standard]",
+    "pydantic",
+    "pydantic-settings",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest",
+    "pytest-asyncio",
+    "httpx",
+    "ruff",
+    "mypy",
+]
+
+[tool.setuptools.packages.find]
+include = ["app*", "src*"]
