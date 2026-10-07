@@ -219,5 +219,6 @@ __marimo__/
 
 # venv
 moe-router/
+moe_router.egg-info
 CLAUDE.md
 
